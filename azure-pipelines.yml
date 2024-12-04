@@ -1,3 +1,7 @@
 pool: Azure Pipelines
+- task: DotNetCoreCLI@2
+  inputs:
+    azureSubscription: 'Azure for Students(83aa28d1-8887-442a-86a6-1b857e5876c1)'
+    command: 'build'
 steps:
 - bash: echo hello world
