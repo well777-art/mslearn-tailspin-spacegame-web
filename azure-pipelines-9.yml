@@ -57,10 +57,10 @@ steps:
     projects: '**/*.csproj'
 
 # Deploy to Azure App Service
-#- task: AzureWebApp@1
-#  displayName: 'Deploy to Azure App Service'
-#  inputs:
-#    azureSubscription: 'BksAzureConnection'
-#    appName: 'SpaceGameByBks'
-#    package: '$(Build.ArtifactStagingDirectory)/**/*.zip'
+- task: AzureWebApp@1
+  displayName: 'Deploy to Azure App Service'
+  inputs:
+    azureSubscription: 'spacegame01'
+    appName: 'spacegamewebapp'
+    package: '$(Build.ArtifactStagingDirectory)/**/*.zip'
 
